@@ -1,0 +1,81 @@
+@media screen and (max-width:662px) {
+    body{
+        overflow-x: hidden;
+        font-family: Helvetica, sans-serif;
+    }
+    .sidebar-hide{
+        position: absolute;
+        top: 0;
+        right: -555px;
+        width: 300px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        z-index: 100;
+        transition: all 1s ;
+    }
+    .mobile-menu{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+    .nav{
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        left: -100%;
+        transition: all 0.3s;
+    }
+    .nav-show{
+        left: 0%;
+        transition: all 0.3s;
+        background-color: #fff;
+        
+    }
+    .hide{
+        display: none;
+    }
+
+    .show{
+        display: inline-block;
+    }
+
+    .cart-icon{
+        margin-top: -20vh;
+
+    }
+    .sub-menu{
+        left: 110%;
+        top: 80%;
+        transition: all 0.5s;
+    }
+    .menu .menu-item:hover .sub-menu{
+        top: 20%;
+        transition: all 0.5s;
+        opacity: 1;
+    }
+    
+
+    .contact{
+        display: none;
+    }
+
+    .hero-content{
+        padding-top: 10rem;
+    }
+
+    .hero-text{
+        width: 100%;
+    }
+    html{
+        font-size: 14px;
+    }
+}

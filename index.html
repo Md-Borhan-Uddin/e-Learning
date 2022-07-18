@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owlcarousel css -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- media query css -->
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Learning Management System</title>
+</head>
+<body>
+    <!--######## header start ########-->
+    <header class="header">
+        
+        <!--###### top header ######-->
+
+        <div class="top-header">
+            <div class="top-header-content container">
+
+                <div class="logo">
+                    <a href="#">E-Learnign</a>
+                </div>
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i> <span style="padding-right: 0.5rem; border-right: 2px solid;">+2374357</span>
+                    <i class="fa-solid fa-envelope" style="padding-left: 0.5rem;"></i> <span>info@e-learning.com</span>
+                </div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-times hide" id="menu-close"></i>
+                </div>
+            </div>
+            <!--###### end top header ######-->
+            </div>
+
+        <!--###### nav bar menu ######-->
+        <nav class="nav" id="nav">
+            <div class="container">
+                <div class="nav-menu center">
+
+                    <ul class="menu center">
+                        <li class="menu-item"><a href="#" class="menu-link">home</a></li>
+                        <li class="menu-item" style="position: relative;"><a href="#" class="menu-link">courses </a><i class="fa-solid fa-angle-down"></i>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#" class="menu-link">Course 1</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Course 2</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Course 3</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Course 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">contact</a></li>
+                    </ul>
+                    <div class="cart-icon center" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge center">4</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+       
+        <!--###### end nav bar menu ######-->
+    </header>
+    <!-- ####### header end #########-->
+
+    <!--###### side bar for cart ###########-->
+    <div class="sidebar-hide" id="side-bar">
+        <div class="heading">
+            <h3 class="cart-text">CART</h3>
+            <span class="close" id="close"><i class="fa-solid fa-times"></i></span>
+        </div>
+        <div class="item-list">
+            <div class="item">
+                <div class="item-img">
+                    <img src="./images/product.jpg" alt="img">
+                </div>
+                <div class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                <span class="delete" id="delete"><i class="fa-solid fa-times"></i></span>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="./images/product.jpg" alt="img">
+                </div>
+                <div class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                <span class="delete" id="delete"><i class="fa-solid fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!--###### end side bar for cart ###########-->
+
+    <!--###### hero section ###########-->
+    <div class="hero">
+        <div class="hero-content container">
+            <h1 class="hero-heading">Learn Sonthings <span class="hero-highlight-text">Smart Way</span> and <br/><span class="hero-highlight-text">Build Up</span> Your Skill</h1>
+            <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Laudantium nam laborum quia perferendis sunt culpa incidunt fugiat tempore 
+                laboriosam unde repudiandae dolores commodi distinctio, 
+                deserunt perspiciatis aperiam dicta cumque quibusdam.</p>
+        </div>
+        
+    </div>
+    <!--###### end hero section ###########-->
+
+
+    <!--###### course list section ###########-->
+    <div class="course">
+        <div class="section-header center">
+            <h2>Chooses Your Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, tempora!</p>
+        </div>
+        <div class="course-list container center">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/product.jpg" alt="product_img">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-header">This is course title</h4>
+                    <div class="course-rating">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                    <p class="price">$30</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn">Enroll Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/product.jpg" alt="product_img">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-header">This is course title</h4>
+                    <div class="course-rating">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                    <p class="price">$30</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn">Enroll Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/product.jpg" alt="product_img">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-header">This is course title</h4>
+                    <div class="course-rating">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                    <p class="price">$30</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--###### end course list section ###########-->
+
+    <!--###### review section  ###########-->
+    <div class="review">
+        <div class="section-header center">
+            <h2>What Our Client's Say</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, tempora!</p>
+        </div>
+        <div class="owl-carousel owl-theme container">
+            <div class="carousel-item center">
+                <div class="img-circle">
+                    <img src="./images/client.jpg" alt="client_image">
+                </div>
+                <div class="review-text ">
+                    <div class="course-rating center">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At voluptates voluptatum, dolorem fuga nulla earum?</p>
+                </div>
+            </div>
+            <div class="carousel-item center">
+                <div class="img-circle">
+                    <img src="./images/client.jpg" alt="client_image">
+                </div>
+                <div class="review-text ">
+                    <div class="course-rating center">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At voluptates voluptatum, dolorem fuga nulla earum?</p>
+                </div>
+            </div>
+            <div class="carousel-item center">
+                <div class="img-circle">
+                    <img src="./images/client.jpg" alt="client_image">
+                </div>
+                <div class="review-text ">
+                    <div class="course-rating center">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At voluptates voluptatum, dolorem fuga nulla earum?</p>
+                </div>
+                </div>
+        </div>
+    </div>
+    <!--###### end review section ###########-->
+
+
+    <!--###### feature section ###########-->
+    <i class="fa-light fa-file-certificate"></i>
+    <div class="feature">
+        <div class="section-header center">
+            <h2>Chooses Your Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, tempora!</p>
+        </div>
+        <div class="feature-content container center">
+            
+            <div class="carousel-item center">
+                <div class="feature-icon">
+                </div>
+                <div class="review-text ">
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At voluptates voluptatum, dolorem fuga nulla earum?</p>
+                </div>
+            </div>
+            <div class="carousel-item center">
+                <div class="feature-icon">
+                    <i class="fa-light fa-square-poll-vertical"></i>
+                </div>
+                <div class="review-text ">
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At voluptates voluptatum, dolorem fuga nulla earum?</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="feature-content container center">
+            <div class="carousel-item center">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-badge-check"></i>
+                </div>
+                <div class="review-text ">
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At voluptates voluptatum, dolorem fuga nulla earum?</p>
+                </div>
+            </div>
+            <div class="carousel-item center">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-file-certificate"></i>
+                </div>
+                <div class="review-text ">
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At voluptates voluptatum, dolorem fuga nulla earum?</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--###### end feature section ###########-->
+
+<div style="height: 100vh; width:20px"></div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

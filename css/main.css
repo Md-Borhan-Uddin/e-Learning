@@ -1,0 +1,407 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    font-family: Helvetica, sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+}
+
+/* common css */
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    background-color: #008000;
+    color: #040303;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+/* header area css */
+
+.top-header{
+    width: 100%;
+    background-color: #FAB300;
+}
+
+.top-header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.contact {
+    padding: 0.5rem;
+    color: green;
+    font-size: 1.2rem;
+}
+
+/* menu  css */
+.nav{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.nav-menu{
+    
+    justify-content: space-between;
+}
+
+.menu{
+    flex: 0 0 35%;
+    justify-content: space-between;
+}
+
+.menu-item{
+    padding-left: 0.5rem;
+}
+
+.menu-link{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: capitalize;
+    color: #008000;
+}
+.menu-link:hover{
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.sub-menu{
+    position: absolute;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top: 150%;
+    width: 220px;
+    opacity: 0;
+    display: none;
+    transition: all 0.5s;
+    background-color: #fff;
+    
+}
+.sub-menu.menu-item,.sub-menu.menu-link{
+    padding-left: 0;
+}
+.menu-item i{
+    position: absolute;
+    top: 35%;
+    font-size: 1.2rem;
+    color: #008000;
+    margin-left: -7px;
+    cursor: pointer;
+}
+
+.menu > .menu-item:hover .sub-menu{
+    top: 100%;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.cart-icon{
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    color: #008000;
+    cursor: pointer;
+    position: relative;
+    cursor: pointer;
+}
+.badge{
+    position: absolute;
+    padding: 1rem;
+    background-color: #FAB300;
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 10px;
+    height: 12px;
+    top: -1%;
+    right: -13%;
+    color: black;
+    font-weight: bolder;
+}
+
+
+
+/* side bar css */
+.sidebar-hide{
+    position: absolute;
+    top: 0;
+    right: -555px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 100;
+    transition: all 1s ;
+}
+.side-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 100;
+    transition: all 1s ;
+}
+
+.heading{
+    position: relative;
+    padding: 1rem 0;
+    text-align: center;
+    color: #FAB300;
+    background-color: #008000;
+    text-decoration: dashed;
+    font-family: Helvetica, sans-serif;
+}
+.close{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 1.2rem;
+    color: #FAB300;
+    cursor: pointer;
+}
+
+.item{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 0.5rem;
+}
+
+.item .item-img{
+    flex: 0 0 25%;
+    height: 60px;
+    object-fit: cover;
+    object-position: cover;
+    border: 1px solid #FAB300;
+    border-radius: 5px;
+}
+.item .item-img > img{
+    border-radius: 5px;
+}
+.item .item-text{
+    flex: 0 0 1;
+    font-family: Helvetica, sans-serif;
+    color: gray;
+}
+.delete{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+}
+
+
+/* hero section css */
+
+.hero{
+    background: linear-gradient(rgba(81, 106, 135, 0.6), rgba(81, 106, 135, 0.6)),url('../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+.hero-content{
+    padding-top: 13rem;
+}
+.hero-heading{
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+.hero-text{
+    font-size: 1.2rem;
+    color: #040303;
+    line-height: 26px;
+    width: 50%;
+}
+.hero-highlight-text{
+    font-size: 2.5rem;
+    color: #FAB300;
+    
+}
+
+/* course list */
+
+.section-header{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+.section-header > h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header > p{
+    font-size: 1.2rem;
+    color: #3a3939;
+    width: 80%;
+}
+
+
+.course-list{
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.card{
+    flex-direction: column;
+    flex: 0 0 350px;
+}
+
+.card-body{
+    margin: 1rem 0;
+    padding: 0 .5rem;
+}
+.card-img{
+    width: 100%;
+    height: 350px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+} 
+ .card:hover .card-img > img{
+    transform: scale(1.1);
+    transition: all 0.3s;
+ }
+
+.card-img > img{
+    border-radius: 8px 8px 0 0;
+    transition: all 0.3s;
+}
+
+.card-footer{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.price{
+    font-size: 1.3rem;
+    color: #FAB300;
+    font-weight: bold;
+}
+
+.card-header{
+    font-size: 1.3rem;
+    color: #504949;
+    font-weight: bold;
+}
+
+/* ratting */
+.course-rating{
+    width: 100%;
+    height: 40px;
+    margin-top: 0.5rem;
+}
+.rating { 
+    border: none;
+    float: left;
+  }
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+  
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  
+  .rating > label { 
+    color: #ddd; 
+   float: right; 
+   color: #FFD700;
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+
+  /* review section css */
+
+  .owl-dots{
+    display: none;
+  }
+  
+  .carousel-item{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .img-circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #FAB300;
+    overflow: hidden;
+  }
+
+  .review-text{
+    padding: 1rem;
+    background-color: #dfdfdf;
+    border-radius: 8px;
+    
+  }
+
+.feature-content{
+    column-gap: 1rem;
+}
