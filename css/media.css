@@ -78,4 +78,8 @@
     html{
         font-size: 14px;
     }
+
+    .feature-content{
+        flex-wrap: wrap;
+    }
 }

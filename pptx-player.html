@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PPTX css -->
+    <link rel="stylesheet" href="./css/pptx/nv.d3.min.css">
+    <link rel="stylesheet" href="./css/pptx/pptxjs.css">
+
+
+    <title>PPTX Player</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        #pptx-player{
+            /* width: 900px; */
+            /* height: 70vh; */
+            overflow: auto;
+            
+        }
+        .slides-toolbar {
+            width: 15% !important;
+            padding: 0 !important;
+            text-align: right !important;
+            margin: 2rem auto;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+        }
+        #slides-next{
+            float: none !important;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="pptx-player"></div>
+    <!-- <input type="file" name="file" id="pptx"> -->
+
+
+    <!-- PTTX js -->
+    
+    <script type="text/javascript" src="./js/pptx/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./js/pptx/jszip.min.js"></script> <!-- v2.. , NOT v.3.. -->
+    <script type="text/javascript" src="./js/pptx/filereader.js"></script> <!--https://github.com/meshesha/filereader.js -->
+    <script type="text/javascript" src="./js/pptx/d3.min.js"></script> <!-- for charts graphs -->
+    <script type="text/javascript" src="./js/pptx/nv.d3.min.js"></script> <!-- for charts graphs -->
+    <script type="text/javascript" src="./js/pptx/pptxjs.js"></script>
+    <script type="text/javascript" src="./js/pptx/divs2slides.js"></script>
+    <script src="./js/pptx.player.js"></script>
+</body>
+</html>
